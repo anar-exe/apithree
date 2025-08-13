@@ -4,7 +4,7 @@ from .routes import get_news
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/api/news": {
+CORS(app, resources = {r"/api/news": {
     "origins": ["https://anar-exe.github.io"],
     "methods": ["GET"]
 }})
