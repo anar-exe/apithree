@@ -9,6 +9,6 @@ CORS(app, resources={r"/api/news": {
     "methods": ["GET"]
 }})
 
-@app.route("/api/news", methods={"GET"})
+@app.route("/api/news", methods=["GET"])
 def news_route():
     return get_news()
